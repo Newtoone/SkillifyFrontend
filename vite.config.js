@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
-  base: './',
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
@@ -11,9 +11,6 @@ export default defineConfig({
     },
   },
   build: {
-    rollupOptions: {
-      external: ['react-router-dom'], // Add this line
-    },
     outDir: 'dist',
   },
 })
