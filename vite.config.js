@@ -14,8 +14,6 @@ export default defineConfig({
     rollupOptions: {
       external: ['react-router-dom'], // Add this line
     },
-    build: {
-      outDir: 'dist',
-    }
+    outDir: 'dist',
   },
 })
